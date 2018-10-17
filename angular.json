@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "blog-frontend": {
+    "tien-frontend": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/blog-frontend",
+            "outputPath": "dist/tien-frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "blog-frontend:build"
+            "browserTarget": "tien-frontend:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "blog-frontend:build:production"
+              "browserTarget": "tien-frontend:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "blog-frontend:build"
+            "browserTarget": "tien-frontend:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "blog-frontend-e2e": {
+    "tien-frontend-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "blog-frontend:serve"
+            "devServerTarget": "tien-frontend:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "blog-frontend:serve:production"
+              "devServerTarget": "tien-frontend:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "blog-frontend"
+  "defaultProject": "tien-frontend"
 }
